@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button";
+
+import { MapFilterItems } from "./components/MapFilterItems";
 
 
 
 export default function Home() {
   return (
-    <div>
-    <h1>Hello World</h1>
-    <Button>Hello User</Button>
+    <div className="container-auto mx-auto px-5 lg:px-10">
+    <MapFilterItems/>
     </div>
   );
 }
