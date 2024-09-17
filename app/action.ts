@@ -64,6 +64,7 @@ export async function CreateDescription(formData: FormData){
     cacheControl:'2592000',
     contentType:"image/png"
   });
+  
   const data = await prisma.home.update({
     where:{
       id:homeId,
