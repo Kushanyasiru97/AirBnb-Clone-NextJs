@@ -56,8 +56,8 @@ const user = await getUser()
                 {data?.title}
             </h1>
             <div className="relative h-[550px]">
-                <Image 
-                src={`https://oiivzpifxsejdbbqtocf.supabase.co/storage/v1/object/public/images/${data?.photo}`}
+                <Image
+                src={`https://grthgtsscarlbixrgyzm.supabase.co/storage/v1/object/public/images/${data?.photo}`}
                 alt="Image of home"
                 fill
                 className="rounded-lg h-full object-cover w-full"

@@ -59,7 +59,7 @@ import { createAirbnbHome } from "../action";
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/favorites" className="w-full">
+                <Link href="/favorite" className="w-full">
                   My Favorites
                 </Link>
               </DropdownMenuItem>
