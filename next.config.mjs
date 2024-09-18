@@ -8,6 +8,11 @@ const nextConfig = {
                 port:"",
 
             },
+            {
+                hostname:"oiivzpifxsejdbbqtocf.supabase.co",
+                protocol:"https",
+                port:"",
+            }
         ],
     },
 };
