@@ -1,10 +1,10 @@
 import { MapFilterItems } from "@/app/components/MapFilterItems";
-import prisma from "./lib/db";
 import ListingCard from "./components/ListingCard";
 import { Suspense } from "react";
 import { SkeletonCard } from "./components/SkeletonCard";
 import { NoItems } from "./components/NoItems";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import prisma from "./lib/db";
 
 async function getData({
   searchParams,
@@ -97,17 +97,16 @@ async function ShowItems({
     ):(
       <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8" >
       {data.map((item) => (
-        <ListingCard key={item.id} 
+        <ListingCard key={item.id}
         description={item.description as string}
-        imagePath={item.photo as string} 
+        imagePath={item.photo as string}
         location={item.country as string}
         price={item.price as number}
         userId={user?.id}
-        favouriteId={item.Favourite[0]?.id}
-        isInFavouriteList={item.Favourite.length>0 ? true : false}
+        // favouriteId={item.Favourite[0]?.id}
+        // isInFavouriteList={item.Favourite.length>0 ? true : false}
         homeId={item.id}
-        pathName="/"
-        />
+        pathName="/" isInFavouriteList={false} favouriteId={""}        />
       ))}
     </div>
   
