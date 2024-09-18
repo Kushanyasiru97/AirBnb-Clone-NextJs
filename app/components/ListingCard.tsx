@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useCountries } from "../lib/getCountries";
 import Link from 'next/link'
 import { AddToFavouriteButton } from "./SubmitButton";
-import { addToFavourite, deleteFromFavourite } from "../actions";
+import { addToFavourite, deleteFromFavourite } from "../action";
 import {DeleteFromFavouriteButton} from  "./SubmitButton"
 
 

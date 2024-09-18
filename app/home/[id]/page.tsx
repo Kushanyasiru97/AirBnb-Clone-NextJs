@@ -4,7 +4,7 @@ import { SelectCalender } from "@/app/components/SelectCalender";
 import prisma from "@/app/lib/db"
 import { useCountries } from "@/app/lib/getCountries";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/sepe";
+import { Separator } from "@/components/ui/separator";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
 import Image from "next/image";
